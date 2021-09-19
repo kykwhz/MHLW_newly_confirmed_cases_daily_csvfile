@@ -16,7 +16,7 @@ def func_SUM_of_targetYearMonth(prefData):
 
 with open('corona_base.txt','r',encoding='UTF-8') as rf:
     csvData = csv.reader(rf) # 取得したファイルオブジェクトを変数csvDataに格納
-    allData = [aData for aData in csvData] # リスト内包表記
+    allData = [aData for aData in csvData]
 
 with open('corona_monthly.txt','w',newline='',encoding='UTF-8') as wf:
     writer = csv.writer(wf)
